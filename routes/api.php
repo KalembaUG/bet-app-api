@@ -20,6 +20,7 @@ use App\Http\Controllers\ApiRootController;
 Route::get('/', [ApiRootController::class, 'endpoints']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/signup', [AuthController::class, 'signup']);
+Route::get('/love', [ApiRootController::class, 'endpoints']);
 
 
 // Protected routes - require tokens
